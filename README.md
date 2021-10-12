@@ -2,7 +2,7 @@
 ## [Demo](https://news-web-template-html.netlify.app/)
 --------
 
-I  have designed the school website front end design using html, css, bootstrap
+I  have designed the News Website front end design using html, css
 ## Technology Used
 
 #### 1. `HTML`
