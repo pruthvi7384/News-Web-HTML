@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root{
+    
+    --font1:'Lobster', cursive;
+    --font2:'Roboto', sans-serif;
+}
+body{
+    font-family:var(--font2);
+}
+/* ================Comman Styling================= */
+    .message{
+       color: red;
+       text-align: center;
+       display: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+/* ===============X==Comman Styling==X=============== */
+
+/* =================Global Classes================= */
+    .container{
+        width: 100%;
+    }
+    .d-flex{
+        display:flex;
+    }
+    
+/* ==============X===Global Classes===X============== */
+
+/* ==============Top Navigation Bar Styling============= */
+    .row_nav{
+        padding:0px 20px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1a1a1a;
+        border-bottom: 2px solid #333;
+    }
+    .row_nav .nav__left ul li{
+        margin:0px 5px;
+        cursor: pointer;
+    }
+    .row_nav .nav__left ul li a{
+        color: #fff;
+        font-size: 11px;
+    }
+    .row_nav .nav__left ul li select{
+        border: none;
+        outline: none;
+        background-color: #1a1a1a;
+        color: #fff;
+        font-size: 11px;
+    }
+    .row_nav .nav__right{
+        padding:3px 0px 0px 0px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .row_nav .nav__right .tp_logo{
+        padding:2px 5px;
+        background: linear-gradient(
+        90deg,#3023ae,#c86dd7) !important;
+        border-radius: 2px !important;
+        color: #fff;
+        margin:0px 10px;
+    }
+    .row_nav .nav__right .tp_logo span{
+        font-size: 13px;
+    }
+    .row_nav .nav__right .right__menu ul{
+        align-items: center;
+    }
+    .row_nav .nav__right .right__menu ul li{
+        margin: 0px 5px;
+    }
+    .row_nav .nav__right .right__menu ul li a{
+        color: #fff;
+        font-size: 16px;
+    }
+    .row_nav .nav__right .right__menu ul li a i{
+        color: #ccc;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        font-size: 13px;
+    }
+    .row_nav .nav__right .right__menu ul li a i:hover {
+        color: #000;
+    }
+/* ===========X===Top Navigation Bar Styling===X========== */
+
+/* ==============Title============== */
+    #heading_area{
+        background: #000;
+        padding-top: 5px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+/* ===========X===Title===X========== */
+
+/* ==============Navigation============= */
+    .row_nav_bottom{
+        background: #be2819;
+        padding:0px 10%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .active{
+        background-color: #fff;
+        color: #000 !important;
+    }
+    .row_nav_bottom .main__menu ul li{
+       padding:5px 10px;
+       color: #fff;
+       font-size: 13px;
+       font-weight: bold;
+       transition: all 0.3s ease-in-out;
+    }
+     .row_nav_bottom .main__menu ul li:hover{
+        background-color: #fff;
+        color: #000;
+     }
+    .row_nav_bottom .menu_search i{
+        color: #fff;
+        cursor: pointer;
+    }
+/* ===========X===Navigation===X========== */
+
+/* ==============Main Container============= */
+    #main__container{
+        padding:5px 10%;
+    }
+    .container__heading p{
+        font-size: 11px;
+        margin-bottom:10px;
+    }
+    .container__heading h2{
+       border-bottom:2px solid #000;
+       padding:5px 0px;
+    }
+    /* ============Left Conatainer========== */
+        .left__container__body{
+            flex-basis: 75%;
+            margin-right: 10px;
+        }
+        .left__container__body .news__conataner{
+           margin-top:20px;
+        }
+        .left__container__body .news__conataner .news__card{
+            padding:10px 0px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .left__container__body .news__conataner .news__card .card__img{
+           margin-right: 10px;
+        }
+        .left__container__body .news__conataner .news__card .card__containt p{
+            text-align: justify;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+    /* ==========X==Left Conatainer==X======== */
+
+    /* ============Right Conatainer========== */
+        .right__container__body{
+            flex-basis:25%;
+            margin-left: 10px;
+        }
+        .right__container__body .right__news{
+            margin-top:20px;
+        }
+        .right__container__body .right__news .heading h3{
+            border-bottom:2px solid #000;
+            padding:5px 0px;
+        } 
+        .right__container__body .right__news .news__containt{
+            margin-top:10px;
+        }
+        .right__container__body .right__news .news__containt p{
+          font-size: 13px;
+          padding: 10px 0px;
+          text-align:justify;
+          border-bottom: 1px solid #e5e5e5;
+        }
+    /* ==========X==Right Conatainer==X======== */
+/* ===========X===Main Container===X========== */
+
+/* ===============Responsive Ness============== */
+        @media(max-width:760px){
+            .container{
+                display: none;
+            }
+            .message{
+                display: initial;
+            }
+        }
+/* =============X==Responsive Ness==X============ */
